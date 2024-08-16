@@ -1,4 +1,6 @@
-package Clients.module;
+package src.Clients.module;
+
+import java.util.ArrayList;
 
 public class Clients {
     private String name;
@@ -13,35 +15,43 @@ public class Clients {
         this.password = password;
     }
 
-    void setName(String name){
+    public void setName(String name){
         this.name = name;
     }
 
-    void setEmail(String email){
+    public void setEmail(String email){
         this.email = email;
     }
 
-    void setCpf(String cpf){
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
 
-    void setPassword(String password){
+    public void setPassword(String password){
         this.password = password;
     }
 
-    String getName(){
+    public String getName(){
         return this.name;
     }
 
-    String getEmail(){
+    public String getEmail(){
         return this.email;
     }
 
-    String getCpf(){
+    public String getCpf(){
         return this.cpf;
     }
 
-    String getPassword(){
+    public String getPassword(){
         return  this.password;
+    }
+
+    public String getData(){
+        String name = "Name:" + this.name;
+        String email = "Email:"+ this.email;
+        String cpf = "CPF:" + this.cpf;
+
+        return name +","+ email +","+ cpf;
     }
 }
